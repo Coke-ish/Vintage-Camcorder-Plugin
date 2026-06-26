@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+			  content="width=device-width, initial-scale=1.0">
+		<title>
+			Vintage Camcorder Plugin
+		</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body class="dark_theme">
+		<h1>
+			Vintage Camcorder 插件
+			<img src="favicon.ico" alt="favicon.ico" id="header_icon">
+			<button id="langsw" name="langsw" onclick="window.location.href='Vintage Plugin.html'">EN</button>
+		</h1>
+		<hr>
+		<p id="header_text">
+			Vintage Camcoder 插件是为
+			<b>
+				<a href="#links">
+					TOUCH DESIGNER
+				</a>
+			</b>
+			软件设计安装的 .tox 格式 图像处理类滤镜插件, 能为您的图像带来复古的效果，使您的作品更加个性化。
+			<br>
+			<b style="margin-top: .5em;display: block;padding-bottom: .5em;">
+				注意：Vintage Camcorder 插件须根据需求调整参数，且不包括录制及后期制作压缩等工序。
+			</b>
+		</p>
+		<table class="maintb">
+			<colgroup>
+				<col span="2">
+			</colgroup>
+			<tbody>
+				<tr>
+					<td -note="1"
+						id="download"
+						style="position: relative;">
+						<h2>插件下载</h2>
+						<hr>
+						<div style="padding:1.5em 0 0 40px;margin-right: 40px;">
+							<b class="header">点击下方下载最新正式版本</b>
+						</div>
+						<div style="margin-block: 1em;padding: 0 0 40px 40px;">
+							<div style="padding-bottom:6em">
+								<a href="release/vintage_plugin-5.2.8+touchdesigner.tox" download>vintage_plugin-5.2.7+touchdesigner.tox</a>
+							</div>
+							<div>
+								<b class="header">预览效果</b>
+								<figure class="preview">
+									<img src="preview1.gif" alt="preview" width="300px" title="preview1.gif">
+									<figcaption class="preview">"Rickroll", On V5.2.0</figcaption>
+								</figure>
+							</div>
+						</div>
+					</td>
+					<td -note="1">
+						<div -note="update">
+							<h2>
+								更新日志
+							</h2>
+							<hr>
+							<ul -li-note>
+								<li -li-note>
+									v5.2.8 update (MAR, 2026)
+								</li>
+								<ul>
+									<li>
+										更平滑的扫描线参数调整界面全新改版
+									</li>
+								</ul>
+								<li -li-note>
+									v5.2.7 update (FEB, 2026)
+								</li>
+								<ul>
+									<li>
+										添加 1 参数: Smoother Scanlines
+									</li>
+									<li>
+										添加 1 参数: 模糊
+									</li>
+									<li>
+										添加 1 参数: Fit
+									</li>
+									<li>
+										汉化修正
+									</li>
+								</ul>
+								<li -li-note>
+									v5.2.6 update (JAN, 2025)
+								</li>
+								<ul>
+									<li>
+										添加 1 参数: 扫描线延迟混合
+									</li>
+								</ul>
+								<li -li-note>
+									v5.2.5 update (JAN, 2025)
+								</li>
+								<ul>
+									<li>
+										修复 v5.2.4 黑边 问题
+									</li>
+									<li>
+										修复 v5.2.3 部分参数未全局应用 问题
+									</li>
+									<li>
+										添加 2 参数: 光栅杂讯、总体杂讯
+									</li>
+								</ul>
+								<li -li-note>
+									v5.2.4 update (JAN, 2025)
+								</li>
+								<ul>
+									<li>
+										改善 比例改变 所导致的 图像拉伸问题
+									</li>
+								</ul>
+								<li -li-note>
+									v5.2.3 update (JAN, 2025)
+								</li>
+								<ul>
+									<li>
+										改善 光栅杂讯 效果
+									</li>
+									<li>
+										添加 RGB漂移 故障效果
+									</li>
+									<li>
+										更新 不同画质、比例选择
+									</li>
+									<ul>
+										<li>4:3 或 5:4</li>
+										<li>480×360 或 320×240</li>
+										<li>450×360 或 300×240</li>
+									</ul>
+									<li>
+										添加参数调整界面，易于查找改变参数
+									</li>
+									<li>
+										为 参数调整界面 提供 中英双语翻译
+									</li>
+								</ul>
+								<li -li-note>
+									v5.2.0 update (JAN, 2025)
+								</li>
+								<ul>
+									<li>
+										改善 短分镜 所导致的 画面延迟不清晰 问题
+									</li>
+								</ul>
+								<li -li-note>
+									v5.1.9 update (DEC, 2024)
+								</li>
+								<ul>
+									<li>
+										对 光栅延迟 进行微调
+									</li>
+								</ul>
+								<li -li-note>
+									v5.1.8 update (DEC, 2024)
+								</li>
+								<ul>
+									<li>
+										添加 光栅杂讯 效果
+									</li>
+								</ul>
+								<li -li-note>
+									v5.1.7 "alt" update (DEC, 2024)
+								</li>
+								<ul>
+									<li>
+										画质提升 （320×240 ➔ 480×360）
+									</li>
+									<li>
+										根据 VHS资料 对 色差偏移 进行微调
+									</li>
+									<li>
+										修复 高饱和度图像输入 所导致的 对比度下降 问题
+									</li>
+								</ul>
+								<li -li-note>
+									v5.1.6 "alt" v2 update (NOV, 2024)
+								</li>
+								<ul>
+									<li>
+										修复 高分辨率图像输入 所导致的 清晰度 问题
+									</li>
+								</ul>
+								<li -li-note>
+									v5.1.6 "alt" v1 update (NOV, 2024)
+								</li>
+								<ul>
+									<li>
+										对 色彩错位 进行微调
+									</li>
+								</ul>
+								<li -li-note>
+									v5.1.6 "alt" update (NOV, 2024)
+								</li>
+								<ul>
+									<li>
+										对 v5.1.6 的微小改进
+									</li>
+									<li>
+										正式发行
+									</li>
+								</ul>
+								<li -li-note>
+									5.3.1dev "v5.3.1 beta" update (1724134599)
+								</li>
+								<ul>
+									<li>
+										[NULL]
+									</li>
+								</ul>
+								<li -li-note>
+									5.3.0dev "v5.3.0 beta" update (AUG, 2024)
+								</li>
+								<ul>
+									<li>
+										通用更新
+									</li>
+								</ul>
+								<li -li-note>
+									5.3.7dev "v5.3.7" update (AUG, 2024)
+								</li>
+								<ul>
+									<li>
+										[NULL]
+									</li>
+								</ul>
+								<li -li-note>
+									v5.1.6 update (1722229064)
+								</li>
+								<ul>
+									<li>
+										[NULL] 
+										<b style="color: #e27b91;">
+										未发布
+										</b>
+									</li>
+								</ul>
+								<li -li-note> 
+									v5.1.5 update (JUL, 2024)
+								</li>
+								<ul>
+									<li>
+										对 v5.1.3 的微小改进
+									</li>
+								</ul>
+								<li -li-note>
+									v5.1.3 update (JUL, 2024)
+								</li>
+								<ul>
+									<li>
+										改善 v5.1.2 效果
+									</li>
+								</ul>
+								<li -li-note>
+									v5.1.2 update (JUL, 2024)
+								</li>
+								<ul>
+									<li>
+										正式发行
+									</li>
+								</ul>
+								<li -li-note>
+									v5.1.2 beta update (JUL, 2024)
+								</li>
+								<ul>
+									<li>
+										改善 1 效果
+									</li>
+									<li>
+										对 强调线条 进行微调
+									</li>
+								</ul>
+								<li -li-note>
+									v5.0.2 update (MAY, 2024)
+								</li>
+								<ul>
+									<li>
+										改善 2 效果
+									</li>
+									<li>
+										修复问题
+									</li>
+								</ul>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td -note="1">
+						<div -note="about">
+							<h2>
+								关于我们
+							</h2>
+							<hr>
+							<div class="TextWrapper">
+								<p>
+									<img src="icon.svg"
+										 alt="icon.svg"
+										 width="200px"
+										 height="200px"
+										 id="avatar">
+									<b class="header">@uxu_ph</b>
+									<br>Shanghai, PRC
+									<br>
+									<p>touch-designer 业余爱好者</p>
+								</p>
+							</div>
+						</div>
+					</td>
+					<td id="links"
+						-note="1">
+						<div -note="links">
+							<h2>
+								相关链接
+							</h2>
+							<hr>
+							<div class="TextWrapper">
+								<p>
+									TOUCH DESIGNER 是一个简单易用的灵活的可视化编程软件，由加拿大公司 Derivative 开发，用途涵盖数字艺术设计、交互新媒体等。
+									想了解更多关于TOUCH DESIGNER的知识？请参阅：
+									<ul id="links_ul">
+										<li>
+											TOUCH DESIGNER 中文社区：
+											<a href="http://www.touchdesigner.co/"
+											   target="_blank"
+											   rel="noopener noreferrer">
+												touchdesigner.co
+											</a>
+										</li>
+										<li>
+											TEA 新媒体艺术社区：
+											<a href="https://www.tea-community.com/"
+											   target="_blank"
+											   rel="noopener noreferrer">
+												tea-community.com
+											</a>
+										</li>
+										<li>
+											Derivative 官网（英文）：
+											<a href="https://derivative.ca/"
+											   target="_blank"
+											   rel="noopener noreferrer">
+												derivative.ca
+											</a>
+										</li>
+										<li>
+											TOUCH DESIGNER 官方论坛（英文）：
+											<a href="https://forum.derivative.ca/"
+											   target="_blank"
+											   rel="noopener noreferrer">
+												forum.derivative.ca
+											</a>
+										</li>
+									</ul>
+								</p>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<figure id="toTop">
+			▲
+			<figcaption>回到顶部</figcaption>
+		</figure>
+		<script>
+			window.onscroll = function() {
+			  var pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+			  var scrollThreshold = pageHeight * 0.25;
+			  if (window.pageYOffset > scrollThreshold) {
+				document.getElementById("toTop").style.opacity = "0.75";
+				document.getElementById("toTop").style.display = "flex";
+			  } else {
+				document.getElementById("toTop").style.opacity = "0";
+				document.getElementById("toTop").style.display = "none";
+			  }
+			};
+			
+			document.getElementById("toTop").addEventListener('click', function() {
+			this.classList.add('dark');
+			setTimeout(() => {
+				this.classList.remove('dark');
+			}, 100);
+
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth'
+			});
+			});
+			</script>
+	</body>
+</html>
